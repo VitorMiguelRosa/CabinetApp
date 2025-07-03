@@ -18,6 +18,7 @@ gem "kamal", require: false
 gem "thruster", require: false
 gem "haml", "~> 6.3"
 gem "devise", "~> 4.2"
+gem "simple_form"
 # gem "image_processing", "~> 1.2"
 
 group :development, :test do
