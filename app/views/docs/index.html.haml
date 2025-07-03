@@ -1,6 +1,52 @@
 -@docs.each  do |doc|
-  %h2= link_to doc.title, doc
+  %h2.titulo= link_to doc.title, doc
   %p= time_ago_in_words(doc.created_at)
   %p= truncate(doc.content, length: 50)
   
-  = link_to "Create Doc", new_doc_path
+  = link_to "Create New Document", new_doc_path, class: "criarnovo"
+
+:css
+  :root {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+  }
+  body {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background-color:rgb(196, 196, 196);
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(255, 255, 255, 0.1);
+  }
+  h2.titulo{
+    color: rgb(0, 183, 255);
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 5px;
+  }
+  h2.titulo a{
+    text-transform : uppercase;
+    font-size: 20px;
+    font-weight: 900;
+    color: #3498db;
+  }
+  a.criarnovo{
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 100%;
+    box-sizing: border-box;
+    width : 100%;
+    font-weight: bold;
+    color: #fff;
+    background-color: #3498db;
+    text-decoration: none;
+    display : flex;
+    text-align: center;
+    justify-content : center;
+    transition : font-size 0.3s ease;
+  }

@@ -3,3 +3,94 @@
 =  render 'form'
 
 = link_to "Cancel", doc_path
+
+:css
+  :root {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+  }
+
+  body {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background-color:rgb(196, 196, 196);
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(255, 255, 255, 0.1);
+  }
+
+  h1 {
+    color: rgb(0, 183, 255);
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  a {
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 100%;
+    box-sizing: border-box;
+    width : 100%;
+    font-weight: bold;
+    color: #fff;
+    background-color: #3498db;
+    text-decoration: none;
+    display : flex;
+    text-align: center;
+    justify-content : center;
+    transition : font-size 0.3s ease;
+  }
+  label{
+    font-size: 16px;
+    margin-block: 10px;
+    margin-left : 10px;
+    font-weight: bold;
+    display: block;
+    color: #333;
+  }
+
+  a:hover {
+    font-size : 18px;
+  }
+  input{
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom : 10px;
+  }
+  input.btn{
+    margin-top : 10px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition : background-color 0.3s ease, font-size 0.3s ease;
+  }
+  input.btn:hover{
+    background-color: #2980b9;
+    font-size: 18px;
+  }
+  textarea{
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 100%;
+    box-sizing: border-box;
+    height: 200px;
+  }

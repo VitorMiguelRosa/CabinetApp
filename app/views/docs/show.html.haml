@@ -1,6 +1,61 @@
 %h1= @doc.title
-%p= @doc.content
+%p.texto= @doc.content
 
 = link_to "All Docs", docs_path
 = link_to "Fix Doc", edit_doc_path(@doc)
 = link_to "Trash", @doc, method: :delete, data: { confirm: "Are you sure about that?" }
+
+:css
+  :root {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+  }
+
+  body {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background-color:rgb(196, 196, 196);
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(255, 255, 255, 0.1);
+  }
+
+  h1 {
+    color: rgb(0, 183, 255);
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  p.texto {
+    background-color : rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  a {
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 100%;
+    box-sizing: border-box;
+    width : 100%;
+    font-weight: bold;
+    color: #fff;
+    background-color: #3498db;
+    text-decoration: none;
+    display : flex;
+    text-align: center;
+    justify-content : center;
+    transition : font-size 0.3s ease;
+  }
+
+  a:hover {
+    font-size : 18px;
+  }
